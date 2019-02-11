@@ -15,8 +15,9 @@ Gem::Specification.new do |gem|
   gem.require_paths = %w(lib)
   gem.version       = OmniAuth::Office365::VERSION
 
-  # Lock at 1.3.x due to https://github.com/intridea/omniauth-oauth2/issues/81
-  gem.add_dependency 'omniauth-oauth2', '~> 1.3.1'
+  # Was locked at 1.3.x due to https://github.com/intridea/omniauth-oauth2/issues/81 
+  # but we can unlock because of commit 02648b3e3c06cd27aeb6f1721291d35238ec8816
+  gem.add_dependency 'omniauth-oauth2', '~> 1.5.0'
 
   gem.add_development_dependency 'rack-test'
   gem.add_development_dependency 'rake'
